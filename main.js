@@ -84,7 +84,7 @@ function processCommand(msg) {
 
 exports.reset = function() {
     client.destroy();
-    client.login('NjUxNDYxODI3MjUwNjE4Mzg3.XfFDaw.MKxhMH-j_rOAfeD65z_zFol0mUg');
+    client.login(process.env.BOT_TOKEN);
 };
 
-client.login('NjUxNDYxODI3MjUwNjE4Mzg3.XiJQSw.QO8vKPlGZZK17NLUt0uj3D0Bjew');
+client.login(process.env.BOT_TOKEN);
