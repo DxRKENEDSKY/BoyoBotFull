@@ -11,6 +11,7 @@ const Help = require('./Commands/HelpCommand.js');
 const Meme = require('./Commands/MemeCommand.js');
 const Pickup = require('./Commands/PickupCommand');
 const WildMagic = require('./Commands/WildMagicCommand');
+const Gambling = require('./Commands/GamblingCommand');
 
 client.on('ready', () => {
     console.log('connected as ' + client.user.username);
@@ -76,6 +77,12 @@ function processCommand(msg) {
             break;
         case 'wildmagic' :
             WildMagic.sendRandomSpell(msg, args);
+            break;
+        case 'deathroll' :
+            Gambling.ContestingDice(msg, args);
+            break;
+        case 'dr' :
+            Gambling.ContestingDice(msg, args);
             break;
             
 
